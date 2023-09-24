@@ -55,4 +55,4 @@ $ wp search-replace-export foo bar - | gzip dump.sql.gz
 
 Installing this package requires WP-CLI. Update to the latest stable release with wp cli update.
 
-Once you've done so, you can install this package with `wp package install https://github.com/magadanskiuchen/wp-search-replace-export`.
+Once you've done so, you can install this package with `wp package install https://github.com/magadanskiuchen/wp-search-replace-export.git`.
