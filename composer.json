@@ -24,15 +24,15 @@
         },
         "bundled": false,
         "commands": [
-            "hello-world"
+            "search-replace-export"
         ]
     },
     "autoload": {
         "psr-4": {
-            "WP_CLI\\HelloWorld\\": "src/"
+            "WP_CLI\\SearchReplaceExport\\": "src/"
         },
         "files": [
-            "hello-world-command.php"
+            "search-replace-export-command.php"
         ]
     },
     "minimum-stability": "dev",
