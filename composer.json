@@ -1,0 +1,57 @@
+{
+    "name": "magadanskiuchen/search-replace-export",
+    "type": "wp-cli-package",
+    "description": "An alternative to the --export argument to the bundled search-replace command",
+    "homepage": "https://github.com/magadanskiuchen/search-replace-export",
+    "license": "MIT",
+    "authors": [],
+    "require": {
+        "wp-cli/wp-cli": "^2.5"
+    },
+    "require-dev": {
+        "wp-cli/wp-cli-tests": "^3.0.11"
+    },
+    "config": {
+        "process-timeout": 7200,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "bundled": false,
+        "commands": [
+            "hello-world"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "WP_CLI\\HelloWorld\\": "src/"
+        },
+        "files": [
+            "hello-world-command.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "behat": "run-behat-tests",
+        "behat-rerun": "rerun-behat-tests",
+        "lint": "run-linter-tests",
+        "phpcs": "run-phpcs-tests",
+        "phpunit": "run-php-unit-tests",
+        "prepare-tests": "install-package-tests",
+        "test": [
+            "@lint",
+            "@phpcs",
+            "@phpunit",
+            "@behat"
+        ]
+    },
+    "support": {
+        "issues": "https://github.com/magadanskiuchen/search-replace-export/issues"
+    }
+}
